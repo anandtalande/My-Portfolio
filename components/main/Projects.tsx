@@ -16,12 +16,12 @@ const Projects = () => {
         <ProjectCard
           title="Personal Portfolio"
           description="Experience my portfolio, a synergy of modern technology and elegant design. A commitment to innovation and user-centric design principles."
-          images={["/Screenshot 3.png"]}
+          images={["/2_1.png","/2_2.png","/2_3.png","/2_4.png"]}
         />
         <ProjectCard
-          title="Another Project"
+          title="Coming soon.."
           description="Description for another project."
-          images={["/3.png"]}
+          images={["/gpt2.png"]}
         />
       </div>
     </div>
