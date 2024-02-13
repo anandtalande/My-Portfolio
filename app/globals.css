@@ -76,20 +76,20 @@
 
 /* Add the animation to the border-dot class */
 .border-dot {
-  background: linear-gradient(90deg, transparent, #6831e7, transparent);
+  background: linear-gradient(90deg, transparent, #570bdb, transparent);
   background-size: 1800% 100%;
-  animation: borderDotAnimation 6s infinite, glowingEffect 7s infinite; /* Change the duration as needed */
+  animation: borderDotAnimation 5s infinite, glowingEffect 50s infinite; /* Change the duration as needed */
   box-shadow: 0 0 100px rgba(139, 92, 246, 0.8); /* Initial glow effect, adjust as needed */
 }
 
 @keyframes glowingEffect {
   0% {
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.8);
   }
   50% {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.8);
   }
   100% {
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.8);
   }
 }
