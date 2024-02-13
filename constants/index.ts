@@ -24,6 +24,11 @@ export const Skill_data = [
       src: "/gmail.png",
       link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=anand01talande@gmail.com",
     },
+    {
+      name: "Instagram",
+      src: "/instagram1.png",
+      link: "https://www.instagram.com/anand_the_big_secret",
+    },
   ];  
   
   export const Frontend_skill = [
