@@ -3,11 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -20,6 +19,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .Welcome-box {
   isolation: isolate;
   overflow: hidden;
@@ -29,7 +29,6 @@
   border-radius: 32px;
   box-shadow: inset 0 -7px 11px #a48fff1f;
   display: flex;
-
   position: relative;
   width: -moz-max-content;
   width: max-content;
@@ -45,6 +44,7 @@
     rgba(113, 47, 255, 0.12);
   box-shadow: inset 0 0 12px #bf97ff3d;
 }
+
 .button-primary:hover {
   background: linear-gradient(
       180deg,
@@ -60,12 +60,36 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
 
+@keyframes borderDotAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 
+/* Add the animation to the border-dot class */
+.border-dot {
+  background: linear-gradient(90deg, transparent, #6831e7, transparent);
+  background-size: 1800% 100%;
+  animation: borderDotAnimation 6s infinite, glowingEffect 7s infinite; /* Change the duration as needed */
+  box-shadow: 0 0 100px rgba(139, 92, 246, 0.8); /* Initial glow effect, adjust as needed */
+}
 
-html {
-  scroll-behavior: smooth;
+@keyframes glowingEffect {
+  0% {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+  }
 }
