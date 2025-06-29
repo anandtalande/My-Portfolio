@@ -22,16 +22,17 @@ const Navbar = () => {
           </div>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
+        {/* Centered navigation links */}
+        <div className="flex-1 flex justify-center">
+          <div className="flex items-center justify-center border border-[#7042f861] bg-[#0300145e] px-[32px] py-[10px] rounded-full text-gray-200 gap-[100px] shadow-[0_0_40px_0.5px_rgba(186,156,255,0.6)]">
+            <a href="#projects" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
+              Projects
             </a>
-            <a href="#skills" className="cursor-pointer">
+            <a href="#skills" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer">
-              Projects
+            <a href="#about-me" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
+              About me
             </a>
           </div>
         </div>
