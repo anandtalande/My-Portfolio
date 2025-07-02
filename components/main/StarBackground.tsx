@@ -9,7 +9,7 @@ import * as random from "maath/random/dist/maath-random.esm";
 const StarBackground = (props: any) => {
   const ref: any = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(50000), { radius: 2.2 })
+    random.inSphere(new Float32Array(20000), { radius: 2.2 })
   );
 
   useFrame((state, delta) => {
@@ -30,7 +30,7 @@ const StarBackground = (props: any) => {
             <PointMaterial
                 transparent
                 color="$fff"
-                size={0.002}
+                size={0.0001}
                 sizeAttenuation={true}
                 dethWrite={false}
             />

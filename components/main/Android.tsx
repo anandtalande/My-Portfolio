@@ -17,7 +17,6 @@ const Android = () => {
             {" "}
             Modern Technologies{" "}
           </span>
-         
         </motion.div>
       </div>
 

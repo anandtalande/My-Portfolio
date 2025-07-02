@@ -15,22 +15,22 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-8 mt-14 w-full z-[20] p-8"
+      className="flex flex-col md:flex-row items-center justify-center px-2 sm:px-8 mt-10 sm:mt-14 w-full z-[20] p-4 sm:p-8"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col gap-3 sm:gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-2 px-2 sm:py-[8px] sm:px-[7px] border border-[#7042f88b] opacity-90"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <SparklesIcon className="text-[#b49bff] mr-2 sm:mr-[10px] h-4 w-4 sm:h-5 sm:w-5" />
+          <h1 className="Welcome-text text-xs sm:text-sm md:text-base">
             Software Developer Portfolio
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[900px] w-auto h-auto"
+          className="flex flex-col gap-3 sm:gap-6 mt-4 sm:mt-6 text-2xl sm:text-4xl md:text-6xl font-bold text-white max-w-full md:max-w-[900px] w-auto h-auto"
         >
           <span>
             Hii I&apos;m
@@ -44,7 +44,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-sm sm:text-base md:text-lg text-gray-400 my-3 sm:my-5 max-w-full md:max-w-[600px]"
         >
           A Software Engineer with experience in Android Application,
           Website, and Software development. Check out my projects and skills.
@@ -54,7 +54,7 @@ const HeroContent = () => {
           target="_blank"
           rel="noopener noreferrer"
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] text-xs sm:text-base"
         >
           RESUME
         </motion.a>
