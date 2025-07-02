@@ -95,3 +95,16 @@
     box-shadow: 0 0 25px rgba(139, 92, 246, 0.8);
   }
 }
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.animate-blink {
+  animation: blink 1s steps(1) infinite;
+}

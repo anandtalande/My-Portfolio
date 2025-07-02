@@ -23,6 +23,11 @@ const Projects = () => {
           description="Description for another project."
           images={["/gpt2.png"]}
         />
+        <ProjectCard
+          title="Coming soon.."
+          description="Description for another project."
+          images={["/gpt2.png"]}
+        />
       </div>
     </div>
   );

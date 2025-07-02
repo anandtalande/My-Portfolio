@@ -1,6 +1,16 @@
+'use client';
+
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+
+const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
+  e.preventDefault();
+  const section = document.querySelector(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Navbar = () => {
   return (
@@ -25,13 +35,13 @@ const Navbar = () => {
         {/* Centered navigation links */}
         <div className="flex-1 flex justify-center">
           <div className="flex items-center justify-center border border-[#7042f861] bg-[#0300145e] px-4 sm:px-8 md:px-[32px] py-2 md:py-[10px] rounded-full text-gray-200 gap-4 sm:gap-10 md:gap-[100px] shadow-[0_0_40px_0.5px_rgba(186,156,255,0.6)] text-xs sm:text-base md:text-lg">
-            <a href="#projects" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
+            <a href="#projects" onClick={e => scrollToSection(e, '#projects')} className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
               Projects
             </a>
-            <a href="#skills" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
+            <a href="#skills" onClick={e => scrollToSection(e, '#skills')} className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
               Skills
             </a>
-            <a href="#about-me" className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
+            <a href="#about-me" onClick={e => scrollToSection(e, '#about-me')} className="cursor-pointer drop-shadow-[0_0_8px_rgba(164,143,255,0.7)] hover:text-white hover:drop-shadow-[0_0_20px_rgba(186,156,255,1)] transition-all duration-300">
               About me
             </a>
           </div>
@@ -51,7 +61,7 @@ const Navbar = () => {
                 alt={social.name}
                 width={24}
                 height={24}
-                className="w-5 sm:w-6 md:w-8"
+                className="w-5 sm:w-6 md:w-7"
               />
             </a>
           ))}

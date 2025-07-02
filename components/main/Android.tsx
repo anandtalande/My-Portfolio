@@ -42,7 +42,7 @@ const Android = () => {
           <h1 className="Welcome-text text-[16px]">Android</h1>
         </div>
       </div>
-      <div className="absolute z-[20] bottom-[10px] px-[5px]">
+      <div className="absolute z-[20] bottom-[40px] px-[5px]">
         <div className="cursive text-[30px] font-medium text-center text-gray-300">
           User Experience Matters
         </div>

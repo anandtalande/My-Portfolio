@@ -14,14 +14,19 @@ interface Props {
 const ProjectCard = ({ title, description, images }: Props) => {
   // State to track the current image index
   const [currentImage, setCurrentImage] = useState(0);
+  const [fade, setFade] = useState(true);
 
   // useEffect to handle image change at intervals
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
 
     intervalId = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 2000);
+      setFade(false);
+      setTimeout(() => {
+        setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        setFade(true);
+      }, 400); // fade out duration
+    }, 5000);
 
     // Cleanup function to clear the interval on component unmount
     return () => {
@@ -38,7 +43,7 @@ const ProjectCard = ({ title, description, images }: Props) => {
         alt={title}
         width={1000}
         height={1000}
-        className="w-full object-contain"
+        className={`w-full object-contain transition-opacity duration-400 ${fade ? 'opacity-100' : 'opacity-0'}`}
       />
 
       {/* Project information */}
