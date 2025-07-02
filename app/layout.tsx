@@ -7,7 +7,7 @@ import Footer from "@/components/main/Footer";
 import SmoothScroll from "@/components/sub/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: " Anand's Portfolio",
+  title: " Anand Talande",
   description: "This is my portfolio",
 };
 
@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/Logo.png" type="image/png" />
+      </head>
       <body
         className={`${inter.className} bg-[#030014] overflow-x-hidden`}
       >
