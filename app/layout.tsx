@@ -5,6 +5,8 @@ import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import SmoothScroll from "@/components/sub/SmoothScroll";
+import ClientLayout from "./ClientLayout";
+
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: " Anand Talande",
@@ -27,7 +29,7 @@ export default function RootLayout({
         <SmoothScroll>
           <StarsCanvas />
           <Navbar />
-          {children}
+          <ClientLayout>{children}</ClientLayout>
           <Footer />
         </SmoothScroll>
       </body>

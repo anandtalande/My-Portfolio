@@ -5,31 +5,31 @@ import { FaFacebook, } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[10px] ">
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[10px] z-50 relative" style={{ pointerEvents: 'auto' }}>
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-center flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Community</div>
 
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://github.com/anandtalande" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[7px] cursor-pointer text-gray-200 hover:text-[#7042f8]">
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px]">Github</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            </a>
+            <a href="https://www.linkedin.com/in/anandtalande" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[7px] cursor-pointer text-gray-200 hover:text-[#0e76a8]">
               <RxLinkedinLogo />
               <span className="text-[15px] ml-[6px]">Linkedin</span>
-            </p>
+            </a>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            <a href="https://www.instagram.com/anand_the_big_secret/" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[7px] cursor-pointer text-gray-200 hover:text-[#e1306c]">
               <RxInstagramLogo />
               <span className="text-[15px] ml-[6px]">Instagram</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
+            </a>
+            <a href="https://www.facebook.com/anandtalande" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[7px] cursor-pointer text-gray-200 hover:text-[#1877f3]">
               <FaFacebook />
               <span className="text-[15px] ml-[6px]">Facebook</span>
-            </p>
+            </a>
           </div>
         </div>
 
