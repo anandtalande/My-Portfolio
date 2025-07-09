@@ -108,3 +108,69 @@
 .animate-blink {
   animation: blink 1s steps(1) infinite;
 }
+
+@keyframes border-glow {
+  0% { box-shadow: 0 0 0 0 #b99cff44; }
+  50% { box-shadow: 0 0 24px 8px #b99cffcc; }
+  100% { box-shadow: 0 0 0 0 #b99cff44; }
+}
+
+.border-gradient-sweep {
+  border-image: linear-gradient(270deg, #b99cff, #7042f8, #2a1446, #b99cff) 1;
+}
+.border-gradient-animate {
+  animation: borderSweep 2s linear infinite;
+}
+@keyframes borderSweep {
+  0% { border-image-source: linear-gradient(270deg, #b99cff, #7042f8, #2a1446, #b99cff); }
+  100% { border-image-source: linear-gradient(630deg, #b99cff, #7042f8, #2a1446, #b99cff); }
+}
+
+.skills-animated-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem; /* matches rounded-xl */
+  padding: 2px;
+  pointer-events: none;
+  z-index: 10;
+  background: conic-gradient(from 0deg, #b99cff, #7042f8, #2a1446, #b99cff);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.group:hover .skills-animated-border {
+  opacity: 1;
+  animation: skills-border-spin 2s linear infinite;
+}
+@keyframes skills-border-spin {
+  100% { transform: rotate(360deg); }
+}
+
+.border-spin-gradient {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  pointer-events: none;
+  z-index: 0;
+}
+.border-spin-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  background: conic-gradient(from 0deg, #b99cff, #7042f8, #2a1446, #b99cff);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+.group:hover .border-spin-gradient::before {
+  opacity: 1;
+  animation: borderSpin 2s linear infinite;
+}
+@keyframes borderSpin {
+  100% { transform: rotate(360deg); }
+}
+

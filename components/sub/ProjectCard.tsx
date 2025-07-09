@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, images }: Props) => {
       setTimeout(() => {
         setCurrentImage((prevImage) => (prevImage + 1) % images.length);
         setFade(true);
-      }, 400); // fade out duration
+      }, 60); // fade out duration
     }, 5000);
 
     // Cleanup function to clear the interval on component unmount
