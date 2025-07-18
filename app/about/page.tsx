@@ -1,20 +1,30 @@
 import React from "react";
 
 const AboutMe = () => {
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-[#030014] text-white p-8">
-      <h1 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">About Me</h1>
-      <div className="max-w-2xl text-lg text-gray-300 leading-relaxed">
-        <p>
-          Hi! I'm Anand Talande, a passionate software developer with experience in Android, web, and UI development. I love building modern, user-friendly applications and learning new technologies. <br /><br />
-          My journey in tech started with curiosity and has grown into a career focused on creating impactful digital solutions. I enjoy collaborating with others, solving problems, and continuously improving my skills.
+    <div className="min-h-screen w-full bg-gradient-to-br via-[#302b63] to-[#24243e] p-6 sm:p-10 flex items-center justify-center">
+      <div className="w-full max-w-4xl bg-[#1c1c2b]/80 backdrop-blur-xl rounded-3xl border border-white/10 shadow-[0_0_20px_rgba(0,0,0,0.5)] p-6 sm:p-10 mt-20 mb-20">
+        <h1 className="text-4xl sm:text-3xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">
+          About Me
+        </h1>
+
+        <p className="text-base sm:text-[15px] text-gray-300 leading-relaxed mb-5">
+          Hey there! 👋 I'm <span className="font-semibold text-white">Anand Talande</span>, a passionate software developer focused on crafting sleek Android apps, dynamic web interfaces, and smooth user experiences. Whether it's coding a mobile feature or designing a responsive UI, I'm all about making tech both useful and beautiful.
         </p>
-        <p className="mt-6">
-          <b>Skills:</b> React, Next.js, TypeScript, Tailwind CSS, Node.js, MongoDB, Express.js, Redux, HTML5, CSS3, JavaScript, and more.
+
+        <p className="text-base sm:text-[15px] text-gray-300 leading-relaxed mb-7">
+          My journey began with pure curiosity and turned into a fulfilling career where I solve problems, build cool stuff, and keep learning every day. I thrive in collaborative environments and love building things that make a real impact.
         </p>
-        <p className="mt-6">
-          <b>Contact:</b> anand.talande@email.com
-        </p>
+
+        <hr className="border-gray-600 my-6" />
+
+        {/* <hr className="border-gray-600 my-6" /> */}
+
+        <div>
+          <h2 className="text-xl font-bold mb-3 text-cyan-300">Contact</h2>
+          <p className="text-gray-300 text-sm">📧 anandtalande01@gmail.com</p>
+        </div>
       </div>
     </div>
   );
