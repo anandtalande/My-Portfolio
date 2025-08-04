@@ -19,7 +19,7 @@ const Projects = () => {
           images={["/2_1.png","/2_2.png","/2_3.png","/2_4.png"]}
         />
         <ProjectCard
-          title="Coming soon.."
+          title="OBCS - Online Birth Certificate system"
           description="Description for another project."
           images={["/gpt2.png"]}
         />

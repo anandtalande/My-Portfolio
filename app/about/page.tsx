@@ -9,22 +9,9 @@ const AboutMe = () => {
           About Me
         </h1>
 
-        <p className="text-base sm:text-[15px] text-gray-300 leading-relaxed mb-5">
-          Hey there! 👋 I'm <span className="font-semibold text-white">Anand Talande</span>, a passionate software developer focused on crafting sleek Android apps, dynamic web interfaces, and smooth user experiences. Whether it's coding a mobile feature or designing a responsive UI, I'm all about making tech both useful and beautiful.
-        </p>
-
-        <p className="text-base sm:text-[15px] text-gray-300 leading-relaxed mb-7">
-          My journey began with pure curiosity and turned into a fulfilling career where I solve problems, build cool stuff, and keep learning every day. I thrive in collaborative environments and love building things that make a real impact.
-        </p>
-
-        <hr className="border-gray-600 my-6" />
-
-        {/* <hr className="border-gray-600 my-6" /> */}
-
-        <div>
-          <h2 className="text-xl font-bold mb-3 text-cyan-300">Contact</h2>
-          <p className="text-gray-300 text-sm">📧 anandtalande01@gmail.com</p>
-        </div>
+        <p className="text-base sm:text-[15px] text-gray-300 leading-relaxed mb-5 text-center">
+          <span className="font-semibold text-white">coming soon...</span>🫡
+        </p>      
       </div>
     </div>
   );
