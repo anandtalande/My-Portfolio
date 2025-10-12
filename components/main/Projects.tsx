@@ -21,12 +21,12 @@ const Projects = () => {
         <ProjectCard
           title="OBCS - Online Birth Certificate system"
           description="Description for another project."
-          images={["/gpt2.png"]}
+          images={["/Frame.png"]}
         />
         <ProjectCard
           title="Coming soon.."
           description="Description for another project."
-          images={["/gpt2.png"]}
+          images={["/Frame.png"]}
         />
       </div>
     </div>
