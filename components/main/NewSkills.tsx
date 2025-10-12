@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const SkillCard = ({ skill }: { skill: { name: string; icon: string } }) => {
   const controls = useAnimation();
@@ -28,7 +29,13 @@ const SkillCard = ({ skill }: { skill: { name: string; icon: string } }) => {
       {/* Animated border gradient */}
       <span className="absolute inset-2 rounded-xl border-2 border-transparent pointer-events-none z-10 border-gradient-sweep group-hover:border-gradient-animate"></span>
       <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-white/10 shadow-inner transition-all duration-300 group-hover:bg-white/20 group-hover:scale-110 z-20">
-        <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12" />
+        <Image
+          src={skill.icon}
+          alt={skill.name}
+          width={40}
+          height={40}
+          className="w-10 h-10 object-contain transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12"
+        />
       </div>
       <span className="text-white text-base font-semibold tracking-wide mt-3 group-hover:text-[#fff] transition-colors duration-300 z-20">
         {skill.name}

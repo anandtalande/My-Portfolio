@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -11,7 +11,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const HeroContent = () => {
-  const texts = ["Anand Talande", "Software Developer"];
+  const texts = useMemo(() => ["Anand Talande", "Software Developer"], []);
   const [displayText, setDisplayText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
   const [typing, setTyping] = useState(true);
