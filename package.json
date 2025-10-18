@@ -11,9 +11,9 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@studio-freight/lenis": "^1.0.42",
-    "next": "13.5.6",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^15.5.6",
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
     "react-icons": "^4.11.0",
     "react-slick": "^0.30.1",
     "slick-carousel": "^1.8.1",

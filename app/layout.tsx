@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import StarsCanvas from "@/components/main/StarBackground";
+import '../app/globals.css';
+// import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import SmoothScroll from "@/components/sub/SmoothScroll";
@@ -24,10 +24,9 @@ export default function RootLayout({
         <link rel="icon" href="/Logo.png" type="image/png" />
       </head>
       <body
-        className={`${inter.className} bg-[#030014] overflow-x-hidden`}
+        className={`${inter.className} bg-[#030014] min-h-screen overflow-x-hidden`}
       >
         <SmoothScroll>
-          <StarsCanvas />
           <Navbar />
           <ClientLayout>{children}</ClientLayout>
           <Footer />
